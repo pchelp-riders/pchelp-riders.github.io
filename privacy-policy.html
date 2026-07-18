@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー — SheepFarm(羊個体管理)</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.9; max-width: 760px; margin: 0 auto; padding: 24px 20px 80px;
+  }
+  h1 { font-size: 1.6rem; line-height: 1.4; border-bottom: 2px solid #4C7C54; padding-bottom: 12px; }
+  h2 { font-size: 1.15rem; margin-top: 2.4em; color: #4C7C54; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th, td { border: 1px solid #ccc; padding: 8px 10px; text-align: left; vertical-align: top; font-size: .95rem; }
+  th { background: rgba(76,124,84,.12); }
+  .meta { color: #666; font-size: .9rem; }
+  @media (prefers-color-scheme: dark) {
+    h2 { color: #8FBF97; }
+    th, td { border-color: #444; }
+    .meta { color: #aaa; }
+  }
+</style>
+</head>
+<body>
+
+<h1>プライバシーポリシー<br>SheepFarm(羊個体管理)</h1>
+
+<p class="meta">制定日: 2026年7月18日 / 最終更新日: 2026年7月18日</p>
+
+<p>PCお助けライダーズ(以下「当方」)は、Androidアプリ「SheepFarm(羊個体管理)」(以下「本アプリ」)におけるユーザーの情報の取り扱いについて、以下のとおりプライバシーポリシーを定めます。</p>
+
+<h2>1. 事業者情報</h2>
+<table>
+  <tr><th>事業者名</th><td>PCお助けライダーズ</td></tr>
+  <tr><th>連絡先</th><td>PC_Help_Riders@outlook.com</td></tr>
+</table>
+
+<h2>2. 取得する情報</h2>
+
+<p>本アプリが取得する情報は次のとおりです。<strong>本アプリは、氏名・住所・電話番号・位置情報・連絡先・端末の識別子を取得しません。</strong></p>
+
+<table>
+  <tr><th>情報</th><th>取得の要否</th><th>内容</th></tr>
+  <tr>
+    <td>アカウント識別子</td><td>必須(自動)</td>
+    <td>本アプリは初回起動時に匿名アカウントを自動作成します。これはユーザーのデータを本人の端末に紐づけるためのランダムな識別子で、個人を特定する情報は含みません。</td>
+  </tr>
+  <tr>
+    <td>メールアドレス</td><td>任意</td>
+    <td>有料プラン(スタンダード)のお申し込み時、および複数端末でデータを共有する場合にのみ、アカウント登録のために取得します。無料でご利用の場合は取得しません。</td>
+  </tr>
+  <tr>
+    <td>ユーザーが入力した記録</td><td>必須</td>
+    <td>羊の個体情報(タグの色・番号・品種・生年月日・血縁など)、繁殖・健康・投薬・体重の記録、収支の記録。これらは家畜の飼養管理データであり、個人情報には該当しません。</td>
+  </tr>
+  <tr>
+    <td>写真</td><td>任意</td>
+    <td>ユーザーが個体に登録した写真。無料プランでは端末内にのみ保存され、外部に送信されません。有料プランの場合のみクラウドに保存されます。</td>
+  </tr>
+  <tr>
+    <td>購入情報</td><td>有料プラン利用時</td>
+    <td>Google Play が発行する購入トークンおよび定期購入の状態。クレジットカード番号などの決済情報は Google が処理し、<strong>当方は一切取得しません。</strong></td>
+  </tr>
+</table>
+
+<h2>3. 利用目的</h2>
+<ul>
+  <li>本アプリの機能(記録の保存・表示・集計・端末間の同期)を提供するため</li>
+  <li>有料プランの提供および契約状態の確認のため</li>
+  <li>お問い合わせに対応するため</li>
+</ul>
+<p><strong>取得した情報を広告配信・行動追跡・ユーザーの分析に利用することはありません。また、第三者に販売・提供することもありません。</strong></p>
+
+<h2>4. 外部サービスの利用</h2>
+<p>本アプリは、機能の提供のために以下の外部サービスを利用しています。これらは当方が業務を委託しているものであり、上記の目的の範囲でのみ情報が取り扱われます。</p>
+<table>
+  <tr><th>サービス</th><th>提供者</th><th>用途</th></tr>
+  <tr><td>Firebase Authentication</td><td>Google LLC</td><td>アカウントの識別</td></tr>
+  <tr><td>Cloud Firestore</td><td>Google LLC</td><td>記録データの保存・端末間同期</td></tr>
+  <tr><td>Cloud Storage for Firebase</td><td>Google LLC</td><td>写真の保存(有料プランのみ)</td></tr>
+  <tr><td>Cloud Functions for Firebase</td><td>Google LLC</td><td>購入の正当性の確認</td></tr>
+  <tr><td>Google Play 課金サービス</td><td>Google LLC</td><td>有料プランの決済</td></tr>
+</table>
+<p>Google のプライバシーポリシー: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<p><strong>本アプリは、広告SDK・アクセス解析SDK・クラッシュ収集SDKを一切組み込んでいません。</strong></p>
+
+<h2>5. 端末の権限</h2>
+<table>
+  <tr><th>権限</th><th>用途</th></tr>
+  <tr><td>カメラ</td><td>個体のQRコードを読み取るため、および個体の写真を撮影するため。撮影した画像を上記の目的以外に利用することはありません。</td></tr>
+  <tr><td>インターネット</td><td>記録をクラウドに同期するため。</td></tr>
+  <tr><td>バイブレーション</td><td>QRコードの読み取り完了を振動で知らせるため。</td></tr>
+</table>
+
+<h2>6. データの保存場所と保存期間</h2>
+<ul>
+  <li>クラウドに保存されるデータは、Google のデータセンター(東京リージョン)に保管されます。</li>
+  <li>通信はすべて暗号化(TLS)されます。</li>
+  <li>データはユーザーが削除するまで、またはアカウントの削除を申し出るまで保存されます。</li>
+  <li>本アプリはオフラインでも動作するため、記録はユーザーの端末内にも保存されます。アプリをアンインストールすると端末内のデータは削除されます。</li>
+</ul>
+
+<h2>7. データの削除・開示の請求</h2>
+<p>アプリ内から個々の記録をいつでも削除できます。アカウントおよびクラウド上のデータをすべて削除したい場合、または保存されている情報の開示をご希望の場合は、下記の連絡先までメールでご連絡ください。ご本人確認のうえ、合理的な期間内に対応いたします。</p>
+
+<h2>8. お子様のプライバシー</h2>
+<p>本アプリは家畜の飼養管理を目的とした業務用アプリであり、13歳未満のお子様を対象としていません。13歳未満の方から意図的に情報を取得することはありません。</p>
+
+<h2>9. 安全管理</h2>
+<p>クラウド上のデータは、アクセス制御ルールによって<strong>本人のアカウントからのみ読み書きできるよう制限</strong>されています。他のユーザーがあなたの記録を閲覧することはできません。</p>
+
+<h2>10. 本ポリシーの変更</h2>
+<p>法令の改正や機能の追加に伴い、本ポリシーを変更する場合があります。重要な変更を行う場合は、本ページへの掲載またはアプリ内での通知によりお知らせします。</p>
+
+<h2>11. お問い合わせ</h2>
+<p>本ポリシーおよび本アプリの情報の取り扱いに関するお問い合わせは、以下までお願いいたします。</p>
+<p>PCお助けライダーズ<br>
+PC_Help_Riders@outlook.com</p>
+
+</body>
+</html>
