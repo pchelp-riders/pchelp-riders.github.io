@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>羊を飼い始めたら、何を記録しておくといいか｜PCお助けライダーズ</title>
+<meta name="description" content="めん羊の飼育で残しておきたい記録を、届出の義務から日々の繁殖・投薬・体重・収支まで整理しました。分娩予定日の数え方（交配日+147日）も解説します。">
+<link rel="icon" href="logo.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="羊を飼い始めたら、何を記録しておくといいか">
+<meta property="og:description" content="届出の義務から、繁殖・投薬・体重・収支まで。あとで困らない残し方を整理しました。">
+<meta property="og:image" content="https://pchelp-riders.github.io/logo.png">
+<meta property="og:url" content="https://pchelp-riders.github.io/sheep-kiroku.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "3971b33bc06a4bf89b241d4d77611302"}'></script>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --ink:#15171c; --ink2:#1c1f26; --line:#2c303a;
+    --paper:#fff; --paper2:#f6f6f7; --line2:#ececee;
+    --accent:#ff5a1f; --accent2:#ff7a3c;
+    --gray:#6b7280; --gray-d:#b7bdc8; --gray-n:#9aa2af;
+    --head:'Zen Kaku Gothic New',system-ui,sans-serif;
+  }
+  html{scroll-behavior:smooth}
+  body{font-family:var(--head);color:var(--ink);background:var(--paper);line-height:1.95;
+       -webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  img{max-width:100%}
+  .wrap{width:min(1120px,90%);margin:0 auto}
+
+  header{position:sticky;top:0;z-index:50;background:rgba(21,23,28,.92);
+         backdrop-filter:blur(8px);border-bottom:1px solid #25282f}
+  .hbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:19px;color:#fff;
+         flex:none;text-decoration:none}
+  .brand span.mark{width:50px;height:44px;border-radius:10px;background:#fff;display:grid;
+       place-items:center;overflow:hidden;padding:3px;box-shadow:0 2px 8px rgba(0,0,0,.3);flex:none}
+  .hbar a.back{color:var(--gray-n);font-weight:700;font-size:14.5px;text-decoration:none;white-space:nowrap}
+  .hbar a.back:hover{color:#fff}
+
+  .hero{background:var(--ink);color:#fff;padding:56px 0 60px}
+  .hero .label{color:var(--accent);font-weight:900;letter-spacing:.14em;font-size:13px}
+  .hero h1{font-weight:900;font-size:clamp(26px,4vw,40px);line-height:1.45;margin:12px 0 0;max-width:22em}
+  .hero p{color:var(--gray-d);font-size:15.5px;margin:18px 0 0;max-width:38em;line-height:1.95}
+
+  article{width:min(760px,90%);margin:0 auto;padding:56px 0 40px}
+  article h2{font-weight:900;font-size:clamp(21px,2.7vw,27px);line-height:1.5;margin:52px 0 0;
+             padding-top:8px;border-top:3px solid var(--accent);display:inline-block}
+  article h3{font-weight:900;font-size:18px;margin:32px 0 0}
+  article p{font-size:16px;margin:16px 0 0;color:#2b3038}
+  article ul{margin:16px 0 0;padding-left:1.3em}
+  article li{font-size:16px;margin:8px 0;color:#2b3038}
+  article strong{font-weight:900}
+  .note{background:var(--paper2);border:1px solid var(--line2);border-left:4px solid var(--accent);
+        border-radius:8px;padding:20px 22px;margin:26px 0 0}
+  .note p{margin:0;font-size:15px;color:#3a3f49}
+  .note p+p{margin-top:10px}
+  table{width:100%;border-collapse:collapse;margin:22px 0 0;font-size:15px}
+  th,td{border:1px solid var(--line2);padding:11px 13px;text-align:left;vertical-align:top}
+  th{background:var(--paper2);font-weight:900;white-space:nowrap}
+  .calc{background:var(--ink);color:#fff;border-radius:12px;padding:26px 28px;margin:26px 0 0;
+        text-align:center}
+  .calc b{display:block;font-size:clamp(19px,3vw,25px);font-weight:900}
+  .calc span{display:block;color:var(--gray-d);font-size:14.5px;margin-top:10px}
+
+  .cta{background:var(--ink);color:#fff;border-radius:14px;padding:32px;margin:56px 0 0;
+       display:flex;flex-wrap:wrap;gap:22px;align-items:center;justify-content:space-between}
+  .cta img{width:64px;height:64px;border-radius:15px;flex:none}
+  .cta .t{min-width:min(100%,20em);flex:1}
+  .cta b{display:block;font-weight:900;font-size:18px}
+  .cta span{display:block;color:var(--gray-d);font-size:14.5px;line-height:1.9;margin-top:8px}
+  .btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;
+       font-weight:800;font-size:15px;padding:14px 26px;border-radius:8px;transform:skewX(-7deg);
+       white-space:nowrap;text-decoration:none}
+  .btn>span{transform:skewX(7deg);display:inline-flex;align-items:center;gap:8px;color:#fff}
+  .ico{width:17px;height:17px;flex:none;stroke:currentColor;fill:none;stroke-width:2;
+       stroke-linecap:round;stroke-linejoin:round}
+
+  .src{margin:48px 0 0;padding-top:22px;border-top:1px solid var(--line2)}
+  .src b{display:block;font-size:14px;font-weight:900;color:var(--gray)}
+  .src ul{padding-left:1.2em;margin-top:8px}
+  .src li{font-size:13.5px;color:var(--gray);line-height:1.8;margin:4px 0}
+  .src a{color:var(--accent)}
+
+  footer{background:#0f1116;color:var(--gray-n);text-align:center;padding:38px 0;font-size:13.5px;
+         margin-top:64px}
+  footer .fb{font-weight:900;color:#fff;font-size:16px;margin-bottom:10px}
+  footer a{color:var(--accent);font-weight:700;text-decoration:none}
+
+  @media(max-width:640px){
+    .hero{padding:42px 0 46px}
+    article{padding:42px 0 30px}
+    .brand{font-size:16px}
+    .brand span.mark{width:42px;height:37px}
+    .cta{padding:26px 22px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hbar">
+    <a href="/" class="brand">
+      <span class="mark"><img src="logo.png" alt="PCお助けライダーズ ロゴ"></span>
+      PCお助けライダーズ
+    </a>
+    <a href="/" class="back">← トップへ</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="label">読みもの</div>
+    <h1>羊を飼い始めたら、<br>何を記録しておくといいか</h1>
+    <p>頭数が増えてから「あの子いつ交配したっけ」と探し始めると、もう追いつきません。最初のうちに決めておくと後がラクな記録の中身を、届出の義務から日々のことまで整理しました。</p>
+  </div>
+</section>
+
+<article>
+
+  <p>日本でめん羊を飼っている農家は、2023年で<strong>999戸・24,631頭</strong>。1戸あたり平均24.7頭です（農林水産省「めん羊・山羊をめぐる情勢」）。頭数は増加傾向で、新しく始める人も少しずつ増えています。</p>
+
+  <p>数頭のうちは頭の中で覚えていられます。でも20頭を超えたあたりから、「この子は何月に交配したか」「あの薬はいつ打ったか」が思い出せなくなります。<strong>思い出せなくなってから記録を始めても、過去は戻ってきません。</strong></p>
+
+  <h2>1. まず、届出は義務です</h2>
+
+  <p>めん羊は<strong>家畜伝染病予防法の対象</strong>で、飼っている人には「飼養衛生管理基準」を守る義務があります。ここには記録の作成・保管も含まれます。</p>
+
+  <p>そして毎年、<strong>2月1日時点の飼養状況を、4月15日までに報告</strong>しなければなりません（家きんは6月15日）。報告する内容は、飼っている家畜の種類と頭数、畜舎の数、衛生管理の状況などです。</p>
+
+  <div class="note">
+    <p><strong>報告の期限や様式は、都道府県によって案内が異なります。</strong>実際に出すときは、お住まいの地域の家畜保健衛生所に確認してください。様式は年によって変わることがあります。</p>
+  </div>
+
+  <p>つまり、<strong>「今、何頭いるか」を年に一度は必ず答えることになります。</strong>普段から増減を記録しておけば、この作業は数分で終わります。逆にどんぶり勘定でやっていると、毎年2月に小屋を数えて回ることになります。</p>
+
+  <h2>2. 個体を見分ける方法を決める</h2>
+
+  <p>記録は「どの羊の話か」が分からないと意味がありません。最初に決めるべきは識別方法です。</p>
+
+  <p>よく使われるのは<strong>耳標（タグ）の色と番号の組み合わせ</strong>です。色で群や生まれ年を分け、番号で個体を特定します。「青の12番」と言えば一頭に定まる状態にしておきます。</p>
+
+  <h3>番号を探す時間が意外と長い</h3>
+
+  <p>紙のノートやExcelで管理していると、記録を見るたびに一覧をスクロールして番号を探すことになります。1回15秒でも、1日20回なら5分、1年で30時間です。</p>
+
+  <p>耳標に<strong>QRコードを貼っておく</strong>と、カメラで読むだけでその個体の記録が開きます。手袋のままでも、番号を読み間違えることもありません。</p>
+
+  <h2>3. 交配日を書けば、分娩予定日が決まる</h2>
+
+  <p>羊の妊娠期間は<strong>約147日</strong>です。交配した日が分かれば、そこから逆算して準備ができます。</p>
+
+  <div class="calc">
+    <b>交配日 ＋ 147日 ＝ 分娩予定日</b>
+    <span>例：4月1日に交配 → 8月26日ごろ分娩</span>
+  </div>
+
+  <p>品種や個体で数日前後しますが、目安としてはこれで足ります。大事なのは<strong>「そろそろだ」と事前に分かること</strong>です。分娩前に別の場所へ移す、夜に見回る、といった段取りが組めます。</p>
+
+  <p>記録しておきたいのは次の3つです。</p>
+
+  <ul>
+    <li><strong>交配日</strong>と、どの雄と交配したか</li>
+    <li><strong>分娩日</strong>と、生まれた子の頭数</li>
+    <li><strong>親子のつながり</strong>（どの母から生まれたか）</li>
+  </ul>
+
+  <p>親子関係は、後から血の重なりを避けるときに効いてきます。数世代たってから「この2頭は掛けてよかったんだっけ」となっても、記録がなければ調べようがありません。</p>
+
+  <h2>4. 薬を使った日は、必ず残す</h2>
+
+  <p>動物用医薬品には<strong>休薬期間</strong>があります。使ってから一定の日数が過ぎるまで、その個体を出荷できません。日数は薬ごとに決まっていて、添付文書に書かれています。</p>
+
+  <div class="note">
+    <p><strong>これは記憶に頼ってはいけない種類の記録です。</strong>間違えて出荷すれば、自分の問題では済みません。使った日・薬の名前・休薬が明ける日を、その場で書き留めてください。</p>
+  </div>
+
+  <p>あわせて、病気やケガの記録も残しておくと、同じ症状が出たときに「前はこの処置で治った」と辿れます。</p>
+
+  <h2>5. 体重は、育ちの答え合わせ</h2>
+
+  <p>体重を定期的に測っておくと、<strong>1日あたりどれだけ増えたか</strong>が分かります。餌を変えたとき、その判断が正しかったかを数字で確認できます。</p>
+
+  <p>参考までに、サフォーク種の90日齢時体重は、民間農家の調査で雄42kg・雌39kg前後（令和5年度）とされています。自分の群がどのあたりにいるか、比べる物差しになります。</p>
+
+  <h2>6. お金の出入りを、個体に紐づける</h2>
+
+  <p>餌代・薬代・出荷収入を<strong>個体ごとに</strong>記録しておくと、「この子は採算に乗ったのか」が分かります。牧場全体の収支だけ見ていると、どこで損をしているかが見えません。</p>
+
+  <p>確定申告のときにも、そのまま使えます。</p>
+
+  <h2>まとめ：記録は「あとで探せる形」で</h2>
+
+  <table>
+    <tr><th>記録すること</th><th>なぜ必要か</th></tr>
+    <tr><td>頭数の増減</td><td>毎年の報告（2月1日時点／4月15日まで）</td></tr>
+    <tr><td>個体の識別</td><td>どの羊の記録かを特定するため</td></tr>
+    <tr><td>交配日・分娩日</td><td>分娩予定日（交配日+147日）と親子関係</td></tr>
+    <tr><td>投薬</td><td>休薬期間が明けるまで出荷できない</td></tr>
+    <tr><td>体重</td><td>育ち具合と餌の効果を確かめる</td></tr>
+    <tr><td>収支</td><td>個体ごとの採算と、確定申告</td></tr>
+  </table>
+
+  <p>紙のノートでも、書いてさえいれば記録としては成立します。ただ、<strong>ノートの弱点は「探せないこと」</strong>です。3年前のあの子の記録を見たいとき、ノートを何冊もめくることになります。</p>
+
+  <p>Excelなら探せますが、今度は<strong>畜舎で開けない</strong>という問題が出ます。その場でメモして、あとで机に向かって清書する。この二度手間が続くと、たいてい途中で書かなくなります。</p>
+
+  <div class="cta">
+    <img src="https://play-lh.googleusercontent.com/eeOg-P8hPWd3XA6W9l4RmHlZMAKgxViOgnlGj_VYZ7CwL6seLf5OMzCPbi5mc57bN2d0ofCPSwt7GilKSl5GdQ=s128" alt="SheepFarm 羊個体管理" width="64" height="64" loading="lazy">
+    <div class="t">
+      <b>ここに書いたことを、そのままアプリにしました</b>
+      <span>SheepFarm は、この記事の内容をひととおり記録できるアプリです。電波の届かない牧場でもそのまま使えて、QRで個体を呼び出せます。交配日を入れれば分娩予定日を自動で計算し、投薬すれば出荷できる日を教えてくれます。飼育中10頭までは無料です。</span>
+    </div>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.pchelpriders.sheepfarm&amp;hl=ja" target="_blank" rel="noopener"><span>
+      <svg class="ico" viewBox="0 0 24 24"><path d="m5 3 14 9-14 9z"/></svg>
+      Google Play で見る</span></a>
+  </div>
+
+  <div class="src">
+    <b>出典</b>
+    <ul>
+      <li><a href="https://www.maff.go.jp/j/chikusan/sinko/lin/l_katiku/attach/pdf/r6_mensanyo-9.pdf" target="_blank" rel="noopener">めん羊・山羊をめぐる情勢（農林水産省 畜産局畜産振興課・令和6年6月）</a> — 飼養頭数・戸数、90日齢時体重</li>
+      <li><a href="https://www.maff.go.jp/j/syouan/douei/katiku_yobo/k_shiyou/" target="_blank" rel="noopener">飼養衛生管理基準について（農林水産省）</a></li>
+      <li><a href="https://www.pref.kanagawa.jp/docs/w5c/eiseikannri1.html" target="_blank" rel="noopener">家畜を飼養する方へ（神奈川県）</a> — 定期報告の期限</li>
+    </ul>
+  </div>
+
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="fb">PCお助けライダーズ</div>
+    <div><a href="/">トップページ</a> ・ <a href="pc-support.html">出張パソコンサポート</a></div>
+    <div style="margin-top:14px">© 2026 PCお助けライダーズ (PC Otasuke Riders). All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
