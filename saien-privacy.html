@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー — 家庭菜園のお財布</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.9; max-width: 760px; margin: 0 auto; padding: 24px 20px 80px;
+  }
+  h1 { font-size: 1.6rem; line-height: 1.4; border-bottom: 2px solid #2E7D32; padding-bottom: 12px; }
+  h2 { font-size: 1.15rem; margin-top: 2.4em; color: #2E7D32; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th, td { border: 1px solid #ccc; padding: 8px 10px; text-align: left; vertical-align: top; font-size: .95rem; }
+  th { background: rgba(46,125,50,.12); }
+  .meta { color: #666; font-size: .9rem; }
+  .lead { background: rgba(46,125,50,.10); padding: 14px 16px; border-radius: 8px; }
+  @media (prefers-color-scheme: dark) {
+    h2 { color: #7BC47F; }
+    th, td { border-color: #444; }
+    .meta { color: #aaa; }
+  }
+</style>
+</head>
+<body>
+
+<h1>プライバシーポリシー<br>家庭菜園のお財布</h1>
+
+<p class="meta">制定日: 2026年8月21日</p>
+
+<p>PCお助けライダーズ（以下「当方」）は、Androidアプリ「家庭菜園のお財布」（以下「本アプリ」）における
+ユーザーの情報の取り扱いについて、以下のとおりプライバシーポリシーを定めます。</p>
+
+<p class="lead"><strong>本アプリは、ユーザーの情報を収集しません。</strong>
+作物・支出・収穫・写真などの入力内容は、すべてお使いの端末の中だけに保存され、
+当方のサーバーへ送信されることはありません。当方はそれらを見ることができません。
+本アプリには<strong>インターネット接続の権限そのものがなく</strong>、送ろうとしても送れない作りです。</p>
+
+<h2>1. 事業者情報</h2>
+<table>
+  <tr><th>事業者名</th><td>PCお助けライダーズ</td></tr>
+  <tr><th>連絡先</th><td>PC_HELP_Riders@outlook.com</td></tr>
+</table>
+
+<h2>2. 取得する情報</h2>
+
+<p><strong>当方が取得する情報はありません。</strong></p>
+
+<p>本アプリには次の入力欄がありますが、いずれも端末内にのみ保存されます。</p>
+
+<table>
+  <tr><th>入力される情報</th><th>保存先</th><th>用途</th></tr>
+  <tr>
+    <td>栽培の記録（作物名・品種・区画・作付面積・植付日・メモ）</td>
+    <td>端末内（アプリ専用領域のデータベース）</td>
+    <td>作物ごとの採算の計算と、連作・相性の案内</td>
+  </tr>
+  <tr>
+    <td>お金の記録（支出の費目・品名・金額・按分の設定、収穫の数量・単位・参考単価）</td>
+    <td>端末内（アプリ専用領域のデータベース）</td>
+    <td>収支の集計と、作物ごとの損益の表示</td>
+  </tr>
+  <tr>
+    <td>写真（作物・収穫に添えた画像）</td>
+    <td>端末内（アプリ専用領域のファイル）</td>
+    <td>記録の見分け</td>
+  </tr>
+  <tr>
+    <td>設定（見ている年・区画の並び順・地域・共通費の配り方・知らせの設定）</td>
+    <td>端末内</td>
+    <td>次に開いたときに同じ状態で表示するため</td>
+  </tr>
+</table>
+
+<p>氏名・メールアドレス・電話番号・位置情報・連絡先・広告IDは、一切取得しません。
+アカウント登録もありません。</p>
+
+<h2>3. 端末の機能の利用</h2>
+
+<p>本アプリが利用者に許可を求める権限は、<strong>通知だけ</strong>です。</p>
+
+<table>
+  <tr><th>権限</th><th>何に使うか</th></tr>
+  <tr>
+    <td>通知（Android 13 以降）</td>
+    <td>「そろそろ収穫の知らせ」を出すため。既定では切で、設定で入れたときだけ出ます</td>
+  </tr>
+</table>
+
+<p><strong>カメラの権限もストレージの権限も持っていません。</strong></p>
+
+<ul>
+  <li>「撮る」は、端末のカメラアプリを呼び出して撮ってもらい、その1枚だけを受け取ります。
+      本アプリがカメラを直接操作することはありません。</li>
+  <li>「選ぶ」は、Android の写真選択ツールを通します。<strong>選んだ1枚だけ</strong>が渡されるため、
+      本アプリが端末の写真全体を見ることはできません。</li>
+</ul>
+
+<p>このほか、毎朝の知らせを予約する仕組み（Android の WorkManager）が次の権限を自動的に付け加えます。
+<strong>いずれも利用者に許可を求めない種類の権限</strong>で、本アプリが独自に使うものではありません。</p>
+
+<table>
+  <tr><th>権限</th><th>なぜ入るか</th></tr>
+  <tr><td>ACCESS_NETWORK_STATE</td><td>予約の仕組みが通信状態を見られる作りになっているため。本アプリは通信しません</td></tr>
+  <tr><td>WAKE_LOCK</td><td>予約した処理を動かしている間、端末が眠ってしまわないようにするため</td></tr>
+  <tr><td>RECEIVE_BOOT_COMPLETED</td><td>端末を再起動しても、翌朝の知らせの予約が消えないようにするため</td></tr>
+  <tr><td>FOREGROUND_SERVICE</td><td>同上、予約の仕組みが持つもの。本アプリは常駐しません</td></tr>
+</table>
+
+<p><strong>INTERNET 権限は入っていません。</strong></p>
+
+<h2>4. 解析ツール・広告について</h2>
+
+<p>アクセス解析、クラッシュ収集、広告のいずれも組み込んでいません。
+第三者のSDKによる情報の収集もありません。</p>
+
+<h2>5. 第三者への提供</h2>
+
+<p>取得する情報がないため、第三者への提供・販売はありません。送信先が存在しません。</p>
+
+<h2>6. データの保存と削除</h2>
+
+<p>記録と写真は端末内のアプリ専用領域に保存されます。
+個別の記録はアプリの中から削除できます。
+本アプリをアンインストールすると、記録も写真もすべて消えます。</p>
+
+<p>なお、次の場合はデータが端末の外に出ます。いずれも<strong>利用者自身の操作</strong>によるものです。</p>
+
+<ul>
+  <li><strong>CSV の書き出し</strong>: 保存先は利用者が選びます。選んだ先での扱いは、
+      そのアプリやサービスの規約によります。</li>
+</ul>
+
+<h2>7. バックアップについて</h2>
+
+<p>Android の自動バックアップが有効な場合、本アプリのデータが Google のバックアップに
+含まれることがあります。これは Google が提供する端末の機能であり、当方はその内容に
+アクセスできません。自動バックアップは端末の設定で無効にできます。</p>
+
+<h2>8. 本アプリの内容についてのご注意</h2>
+
+<p>本アプリが表示する連作年数・コンパニオンプランツの相性・収穫までの日数は、
+園芸書などで広く言われている<strong>目安</strong>です。土質・品種・天候によって変わるため、
+判断の材料としてお使いください。</p>
+
+<p>収穫の金額換算は、利用者が入力した参考単価によるものです。実際の販売価格を保証するものではありません。</p>
+
+<h2>9. 子どもの利用について</h2>
+
+<p>年齢の情報を取得しません。個人を特定する情報を集めないため、
+子どもが使った場合でも収集される情報はありません。</p>
+
+<h2>10. 本ポリシーの変更</h2>
+
+<p>本ポリシーの内容を変更する場合は、本ページにて改定後の内容を掲示します。
+情報の取り扱いに関わる重要な変更を行う場合は、アプリ内でもお知らせします。</p>
+
+<h2>11. お問い合わせ</h2>
+
+<p>本ポリシーおよび本アプリに関するお問い合わせは、次のメールアドレスまでお願いいたします。</p>
+
+<p>PC_HELP_Riders@outlook.com</p>
+
+</body>
+</html>
