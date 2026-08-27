@@ -2,9 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://pchelp-riders.github.io/</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <priority>1.0</priority>
   </url>
+  <!-- ⚠️ sheepfarm-pc.html は 羊/docs/store/sales-page 側から公開リポジトリへ直接置いたページ。
+       deploy.sh の許可リストには入っていないが、この sitemap.xml は上書きされるため、
+       ここに載せておかないと公開サイトの sitemap から消える（2026-08-27 に実際に消しかけた）。 -->
   <url>
     <loc>https://pchelp-riders.github.io/sheepfarm-pc.html</loc>
     <lastmod>2026-08-25</lastmod>
