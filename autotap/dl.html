@@ -10,11 +10,11 @@
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: #f0f2f5; min-height: 100vh;
-      display: flex; align-items: center; justify-content: center; padding: 16px;
+      display: flex; align-items: flex-start; justify-content: center; padding: 16px;
     }
     .card {
       background: #fff; border-radius: 12px; box-shadow: 0 2px 16px rgba(0,0,0,0.12);
-      padding: 28px 24px; width: 100%; max-width: 420px;
+      padding: 28px 24px; width: 100%; max-width: 440px;
     }
     h1 { font-size: 18px; font-weight: 700; color: #111; margin-bottom: 4px; }
     .subtitle { font-size: 13px; color: #888; margin-bottom: 20px; }
@@ -25,9 +25,11 @@
       background: #2E7D32; color: #fff; margin-bottom: 24px;
     }
     .btn:active { opacity: 0.8; }
-    h2 { font-size: 14px; font-weight: 700; color: #333; margin: 18px 0 8px; }
-    ol { padding-left: 20px; }
+    .btn2 { background: #1565C0; margin: 8px 0 0; font-size: 14px; padding: 12px; }
+    h2 { font-size: 14px; font-weight: 700; color: #333; margin: 20px 0 8px; }
+    ol, ul { padding-left: 20px; }
     li { font-size: 13px; color: #444; line-height: 1.9; }
+    p.txt { font-size: 13px; color: #444; line-height: 1.8; }
     .note { font-size: 12px; color: #8a6d00; background: #fff8e1; border: 1px solid #ffe0a3;
       border-radius: 8px; padding: 10px; margin-top: 16px; line-height: 1.7; }
   </style>
@@ -38,28 +40,44 @@
     <p class="subtitle">身内版のダウンロード</p>
     <p class="ver">最新バージョン: 7.40</p>
 
-    <a class="btn" href="autotap-full.apk?v=457">⬇ APK をダウンロード</a>
+    <a class="btn" href="autotap-full.apk">⬇ APK をダウンロード</a>
 
     <h2>インストール手順</h2>
     <ol>
       <li>上のボタンで APK をダウンロード</li>
       <li>通知またはファイルアプリから APK を開く</li>
       <li>「この提供元を許可」を求められたら許可してインストール</li>
-      <li>旧バージョンから上書きできない場合は、先に旧アプリをアンインストール</li>
+      <li>上書きできないと言われたら、先に古いアプリをアンインストール</li>
     </ol>
 
     <h2>初期設定（インストール後）</h2>
     <ol>
       <li>アプリを開き「① アクセシビリティ設定」を有効化</li>
       <li>「② オーバーレイ権限」を許可</li>
-      <li>「📡 リモート操作設定」からログイン</li>
-      <li>同じ画面で <b>「📱 この端末を登録」</b> を押す（これをしないと遠隔操作の対象になりません）</li>
-      <li>遠隔起動される側の端末は「スレーブワークフロー」もON</li>
+      <li>「📡 リモート操作設定」を開いてログイン</li>
+      <li>同じ画面で <b>「📱 この端末を登録」</b>（<b>画面ロックのPINが必要</b>です。🚀タップ開始でロックを外すのに使い、端末の中だけに保存されます）</li>
+      <li>アプリ画面の「開始」でフローティングを出しておく（画面を消しても動いたままで大丈夫）</li>
     </ol>
 
+    <h2>使い方（端末リモコン）</h2>
+    <p class="txt">登録した端末は、スマホやPCのブラウザからまとめて操作できます（アプリの「📡 リモート操作設定」の端末一覧でも同じことができます）。</p>
+    <a class="btn btn2" href="https://autotap-1eb2b.web.app/devices.html">🌐 端末リモコンを開く</a>
+    <ul style="margin-top:10px;">
+      <li><b>🎯 対戦URL</b>：開く対戦のURL（全端末共通・端末ごとの個別URLも可）</li>
+      <li><b>🚀 タップ開始</b>：画面ON→PIN解除→対戦URL→連打。クリック上限で対象アプリ終了・画面OFF</li>
+      <li><b>🎛 調整</b>：OFFならスコアを見ずに上限まで連打。ONならスコア差で止めて、追いつかれたら再開</li>
+      <li><b>🤝 参加</b>：対戦URLを開いて「参加する」を押す（参加できたら対象アプリ終了・画面OFF）</li>
+      <li><b>⏸ 停止</b>：連打を止めるだけ　／　<b>⏹ 終了</b>：連打停止＋対象アプリ終了＋画面OFF</li>
+      <li><b>📅 予約・⏰ 何分前</b>：日時を決めて🚀タップ開始（全端末共通・1台だけ、どちらも可）</li>
+      <li><b>🔑 PIN・⏱ 速度・📺 画面</b>：PINの登録、連打の速さ、今の画面の確認</li>
+      <li><b>✅ 有効 / 🚫 無効</b>：無効の端末は連打もリモート操作もしません（アプリの「開始」から動画・広告は使えます）</li>
+    </ul>
+
+    <h2>更新のしかた</h2>
+    <p class="txt">アプリ画面のいちばん上に <b>「⬆ ○○ に更新する」</b> が出たら押してください（勝手には更新されません）。このページから APK を入れ直しても上書きできます。設定はそのまま引き継がれます。</p>
+
     <div class="note">
-      ⚠️ このページのURLは身内以外に共有しないでください。<br>
-      更新版が出たら、もう一度このページからダウンロードすれば上書きインストールできます（設定は引き継がれます）。
+      ⚠️ このページのURLは身内以外に共有しないでください。
     </div>
   </div>
 </body>
