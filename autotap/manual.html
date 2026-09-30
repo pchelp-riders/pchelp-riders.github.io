@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>オートタップ 調整さん 説明書</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f0f2f5; color: #333; padding: 16px;
+    }
+    .wrap { max-width: 640px; margin: 0 auto; }
+    .card {
+      background: #fff; border-radius: 12px; box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+      padding: 22px 20px; margin-bottom: 14px;
+    }
+    h1 { font-size: 20px; color: #111; margin-bottom: 4px; }
+    .subtitle { font-size: 13px; color: #888; }
+    h2 { font-size: 16px; color: #1565C0; margin-bottom: 10px; }
+    h3 { font-size: 14px; color: #333; margin: 14px 0 6px; }
+    p, li { font-size: 14px; line-height: 1.85; }
+    ol, ul { padding-left: 20px; }
+    li { margin-bottom: 2px; }
+    b { color: #111; }
+    .toc a { color: #1565C0; text-decoration: none; }
+    .toc li { font-size: 14px; }
+    .btn {
+      display: inline-block; padding: 10px 14px; border-radius: 8px; text-decoration: none;
+      font-size: 14px; font-weight: 700; color: #fff; background: #1565C0; margin: 6px 6px 0 0;
+    }
+    .btn.green { background: #2E7D32; }
+    table { width: 100%; border-collapse: collapse; margin-top: 6px; }
+    th, td { font-size: 13px; text-align: left; padding: 7px 6px; border-bottom: 1px solid #eee; vertical-align: top; line-height: 1.6; }
+    th { white-space: nowrap; color: #111; width: 34%; }
+    .tip { font-size: 13px; background: #e8f5e9; border: 1px solid #c8e6c9; border-radius: 8px; padding: 9px 11px; margin-top: 10px; line-height: 1.7; }
+    .warn { font-size: 13px; background: #fff8e1; border: 1px solid #ffe0a3; border-radius: 8px; padding: 9px 11px; margin-top: 10px; line-height: 1.7; }
+    .q { font-weight: 700; margin-top: 12px; font-size: 14px; }
+    .q:first-child { margin-top: 0; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="card">
+    <h1>オートタップ 調整さん 説明書</h1>
+    <p class="subtitle">身内版（端末リモコンで操作する版）</p>
+    <a class="btn green" href="dl.html">⬇ ダウンロードページ</a>
+    <a class="btn" href="https://autotap-1eb2b.web.app/devices.html">🌐 端末リモコンを開く</a>
+  </div>
+
+  <div class="card toc">
+    <h2>もくじ</h2>
+    <ol>
+      <li><a href="#what">できること</a></li>
+      <li><a href="#setup">はじめの準備</a></li>
+      <li><a href="#floating">フローティング（スマホに出る小窓）</a></li>
+      <li><a href="#remote">端末リモコン（web）の使い方</a></li>
+      <li><a href="#auto">自動でやってくれること</a></li>
+      <li><a href="#video">動画・広告</a></li>
+      <li><a href="#update">アプリの更新</a></li>
+      <li><a href="#faq">困ったとき</a></li>
+    </ol>
+  </div>
+
+  <div class="card" id="what">
+    <h2>1. できること</h2>
+    <ul>
+      <li>TikTok Lite の対戦（タップバトル）を<b>自動で連打</b>します。</li>
+      <li>何台ものスマホを、<b>PCやスマホのブラウザ（端末リモコン）からまとめて動かせます</b>。</li>
+      <li>画面が消えてロックされたスマホも、<b>PINでロックを外して</b>対戦を開き、連打を始めます。</li>
+      <li><b>クリック上限</b>（1時間に5000回）になったら、TikTok Lite を閉じて画面を消します。</li>
+      <li>「調整」をONにすると、<b>勝っているときは止め、追いつかれたら再開</b>します。</li>
+    </ul>
+  </div>
+
+  <div class="card" id="setup">
+    <h2>2. はじめの準備（1台ごとに1回だけ）</h2>
+    <ol>
+      <li><a href="dl.html">ダウンロードページ</a>から APK を入れる（「この提供元を許可」は許可）</li>
+      <li>アプリを開き <b>「① アクセシビリティ設定」</b> を有効にする</li>
+      <li><b>「② オーバーレイ権限」</b> を許可する</li>
+      <li><b>「📡 リモート操作設定」</b> を開いてログイン</li>
+      <li>同じ画面で <b>「📱 この端末を登録」</b>。端末名と<b>画面ロックのPIN</b>を入れます</li>
+      <li>アプリ画面の <b>「開始」</b> を押して、フローティング（小窓）を出しておく</li>
+    </ol>
+    <div class="tip">💡 PIN は、画面が消えたスマホのロックを外すのに使います。スマホの中だけに保存され、クラウドには残りません。</div>
+    <div class="tip">💡 準備が終わったら、フローティングを出したまま画面を消して置いておけば大丈夫です。あとは端末リモコンから動かせます。</div>
+  </div>
+
+  <div class="card" id="floating">
+    <h2>3. フローティング（スマホに出る小窓）</h2>
+    <table>
+      <tr><th>● 連打中／■ 停止中</th><td>いまの状態。止まっている理由（スコア差・クリック上限など）も出ます</td></tr>
+      <tr><th>差 +1,234（自／相）</th><td>スコア差。調整ONのときだけ表示（OFFのときは「スコアは見ません」）</td></tr>
+      <tr><th>開始</th><td>その場で連打を始める（スコアは見ずに連打。クリック上限で終了）</td></tr>
+      <tr><th>停止</th><td>連打を止めるだけ</td></tr>
+      <tr><th>調整 ON／OFF</th><td>ONにすると、スコア差で止めたり再開したりします（下の「調整」参照）</td></tr>
+      <tr><th>✅ 有効／🚫 無効</th><td>無効にすると連打もリモート操作もしなくなります（ログインしているときだけ表示）</td></tr>
+      <tr><th>－ ／ ＋</th><td>小さくする／大きくする。一番小さいと「開始・停止」だけになります</td></tr>
+    </table>
+  </div>
+
+  <div class="card" id="remote">
+    <h2>4. 端末リモコン（web）の使い方</h2>
+    <p>スマホやPCのブラウザで開きます。ログインすると、登録した端末が一覧で出ます。</p>
+    <a class="btn" href="https://autotap-1eb2b.web.app/devices.html">🌐 端末リモコンを開く</a>
+
+    <h3>まず最初に：🎯 対戦URL</h3>
+    <p>一覧の上の「🎯 対戦URL」に、連打したい対戦のURLを貼って保存します。全端末共通です。端末ごとに違うURLにしたいときは、各端末の「🎯 URL」で個別に設定できます。</p>
+
+    <h3>ボタンの意味</h3>
+    <table>
+      <tr><th>🚀 タップ開始</th><td>画面ON → PINでロック解除 → 対戦URLを開く → 「続ける」等を押す → 連打。クリック上限で TikTok Lite を閉じて画面OFF</td></tr>
+      <tr><th>🤝 参加</th><td>対戦URLを開いて「参加する」を押す（連打はしない）。参加できたら TikTok Lite を閉じて画面OFF</td></tr>
+      <tr><th>⏸ 停止</th><td>連打を止めるだけ（TikTok Lite は開いたまま）</td></tr>
+      <tr><th>⏹ 終了</th><td>連打を止めて、TikTok Lite を閉じて画面OFF</td></tr>
+      <tr><th>🎛 調整 ON／OFF</th><td>OFF：スコアを見ずに上限まで連打。ON：勝っていれば止め、追いつかれたら再開</td></tr>
+      <tr><th>📅 予約</th><td>日時を決めて🚀タップ開始（1回だけ・実行後に自動で消える）。一覧の上の「予約」は全端末共通、各端末の📅はその端末だけ</td></tr>
+      <tr><th>⏰ 何分前</th><td>その端末だけ、予約の何分前に始めるか（動きが遅い端末を早めに起こす）</td></tr>
+      <tr><th>🔑 PIN</th><td>その端末のPINを登録し直す</td></tr>
+      <tr><th>⏱ 速度</th><td>連打の間隔（ms）。小さいほど速い（ふつうは100）</td></tr>
+      <tr><th>📺 画面</th><td>その端末の今の画面を撮って、端末の下に表示（✕ 消すで消せます）</td></tr>
+      <tr><th>✅ 有効／🚫 無効</th><td>端末名の横のボタン。無効の端末はボタンが押せず、連打もしません</td></tr>
+      <tr><th>🗑 削除</th><td>一覧から消す（その端末の登録も解除）</td></tr>
+    </table>
+
+    <h3>まとめて動かす（一括操作）</h3>
+    <p>各端末のチェックボックス（または「全選択」）にチェックを入れてから、上の一括ボタンを押します。🚫無効の端末は自動で外れます（🔑PIN・⏱速度・✅有効だけは無効の端末にもかかります）。</p>
+
+    <h3>端末の状態表示</h3>
+    <table>
+      <tr><th>● 連打中</th><td>連打している</td></tr>
+      <tr><th>● 停止中</th><td>対戦画面を開いたまま止まっている</td></tr>
+      <tr><th>● 待機中</th><td>画面が消えている・対戦画面を開いていない（いつでも🚀で動かせる状態）</td></tr>
+      <tr><th>オフライン</th><td>アプリが止まっている・電波がない</td></tr>
+      <tr><th>最後の終了</th><td>最後に終了した時刻と理由（クリック上限・参加完了など）</td></tr>
+    </table>
+  </div>
+
+  <div class="card" id="auto">
+    <h2>5. 自動でやってくれること</h2>
+    <ul>
+      <li>対戦を開いたときに出る <b>「続ける」「OK」「バトル(5s)」</b> を押してから連打します。</li>
+      <li><b>クリック上限</b>になったら、TikTok Lite を閉じて画面を消します。TikTok の画面に出る「○○:○○:○○後にまた戻ってきて」の時間を読んで待ちます。</li>
+      <li>TikTok Lite が <b>「不明なエラーが発生しました」</b> で止まったら、閉じて対戦を開き直します（調整ON・🚀タップ開始のとき）。</li>
+      <li>アプリが落ちても、✅有効の端末は<b>自動で立ち上がり直します</b>（調整のON/OFFもそのまま）。</li>
+      <li>フローティングが連打する場所に重ならないよう、よけて表示します。</li>
+    </ul>
+  </div>
+
+  <div class="card" id="video">
+    <h2>6. 動画・広告</h2>
+    <p>アプリ画面の「動画2・広告2」「本家」のボタンで、ポイント用の動画視聴・広告視聴を自動で行えます。先にアプリの「開始」でフローティングを出しておいてください。</p>
+    <div class="tip">💡 🚫無効の端末でも、自分でアプリの「開始」を押せば動画・広告は使えます（連打はしません）。</div>
+  </div>
+
+  <div class="card" id="update">
+    <h2>7. アプリの更新</h2>
+    <p>新しい版が出ると、アプリ画面のいちばん上に <b>「⬆ ○○ に更新する」</b> と出ます。押すと更新されます（勝手には更新されません）。<a href="dl.html">ダウンロードページ</a>から入れ直しても大丈夫です。設定はそのまま残ります。</p>
+  </div>
+
+  <div class="card" id="faq">
+    <h2>8. 困ったとき</h2>
+
+    <p class="q">🚀タップ開始しても動かない</p>
+    <ul>
+      <li>端末リモコンでその端末が <b>✅有効</b> か、<b>オフライン</b>になっていないか見てください。</li>
+      <li>スマホで調整さんのフローティングが出ているか確認（出ていなければアプリの「開始」）。</li>
+      <li>「🎯 対戦URL」が保存されているか確認。</li>
+    </ul>
+
+    <p class="q">ロックが外れない（PINの画面が出ない・PINが入らない）</p>
+    <ul>
+      <li>端末リモコンの <b>🔑 PIN</b> で、画面ロックと同じPINを登録し直してください（「PIN✔」になればOK）。</li>
+      <li>画面ロックが「パターン」だと外せません。<b>PIN（数字）</b>にしてください。</li>
+    </ul>
+
+    <p class="q">「続ける」などを押さずに連打している</p>
+    <ul><li>数十秒のうちに押し直します。ずっと押さない場合は ⏹終了 → 🚀タップ開始 でやり直してください。</li></ul>
+
+    <p class="q">調整ONなのに止まらない・再開しない</p>
+    <ul><li>フローティングの「差 …」が正しく出ているか見てください。「差 ---」のときはスコアが読めていません。そのときの画面（📺 画面）を送ってもらえれば調べます。</li></ul>
+
+    <p class="q">上限じゃないのに終わった</p>
+    <ul><li>端末リモコンの「最後の終了」に理由が出ています。その文を教えてもらえれば調べます。</li></ul>
+
+    <p class="q">フローティングに ✅有効／🚫無効 がない</p>
+    <ul><li>「📡 リモート操作設定」でログインしていないときは出ません。ログインして「📱 この端末を登録」をしてください。</li></ul>
+
+    <p class="q">🚫無効にしたらアプリが消えた</p>
+    <ul><li>無効の端末はアプリを終了します。戻すときは、スマホでアプリを開いて「開始」→ フローティングのスイッチで ✅有効 にしてください。</li></ul>
+
+    <div class="warn">⚠️ TikTok 側の画面が変わると、うまく動かなくなることがあります。おかしいときは早めに知らせてください。</div>
+  </div>
+
+</div>
+</body>
+</html>
