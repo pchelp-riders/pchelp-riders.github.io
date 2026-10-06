@@ -39,6 +39,7 @@ tr:last-child td{border-bottom:none}
 .hit{font-size:12px;color:#7b8a80;margin:7px 0 4px}
 .logwrap{max-height:70vh;overflow:auto;-webkit-overflow-scrolling:touch}
 .logwrap table{font-size:13px}
+.logwrap td.ax{white-space:nowrap}
 .logwrap th{position:sticky;top:0;z-index:1}
 #more{display:block;width:100%;margin-top:10px;padding:10px;font-size:14px;
  border:1px solid #d6e0da;border-radius:9px;background:#fafcfb;color:#2f6b4f;
@@ -46,7 +47,7 @@ tr:last-child td{border-bottom:none}
 .none{font-size:13px;color:#9aa8a0;text-align:center;padding:18px 0}
 </style></head><body><div class=wrap>
 <h1>🍯 ハチミツ争奪戦 集計</h1>
-<div class=upd>集計日 2026/10/6　／　ラウンド終了 2026/11/2 00:00　／　更新 2026/10/06 09:58</div>
+<div class=upd>集計日 2026/10/6　／　ラウンド終了 2026/11/2 00:00　／　更新 2026/10/06 10:00</div>
 <div class=card><h2>獲得ログ</h2>
 <select id=pf><option value="">オプチャ名で絞る（すべて）</option>
 <option>kozoo</option>
@@ -77,9 +78,10 @@ function esc(s){return String(s).replace(/[&<>]/g,function(c){
   return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];});}
 function draw(n){var h='',e=Math.min(shown+n,hits.length);
   for(var i=shown;i<e;i++){var r=hits[i];
-    h+='<tr><td class=n>'+esc(r[0])+'</td><td class=n>'+esc(r[1])+
+    h+='<tr><td class=ax>'+esc(String(r[0]).replace(/^\d{4}\//,''))+
+       '</td><td class=ax>'+esc(r[1])+
        '</td><td class=n>'+esc(r[2])+'</td><td class=me>+'+esc(r[3])+
-       '</td><td class=n>'+esc(r[4])+'</td><td class=n>'+esc(r[5])+'</td></tr>';}
+       '</td><td class=ax>'+esc(r[4])+'</td><td class=n>'+esc(r[5])+'</td></tr>';}
   b.insertAdjacentHTML('beforeend',h);shown=e;
   more.style.display=shown<hits.length?'block':'none';
   hit.textContent=hits.length+'件'+(shown<hits.length?'（'+shown+'件を表示中）':'');}
