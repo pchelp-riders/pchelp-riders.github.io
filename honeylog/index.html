@@ -19,6 +19,9 @@
     h2{font-size:14px;font-weight:700;color:#2f6b4f;margin:20px 0 6px}
     ol,ul{margin-left:1.2em;font-size:14px}
     li{margin-bottom:5px}
+    p{font-size:13px;margin-top:8px}
+    .new{background:#eef6f1;border-left:3px solid #2f6b4f;padding:10px 12px;border-radius:6px;
+      font-size:13px;margin-top:10px}
     .note{font-size:12px;color:#7b8a80;margin-top:14px;padding-top:12px;border-top:1px solid #eef2ef}
   </style>
 </head>
@@ -26,8 +29,15 @@
   <div class="card">
     <h1>🍯 ハチミツ集計</h1>
     <div class="sub">TikTok Lite の獲得履歴を自動で読み取るアプリ</div>
-    <a class="dl" href="honeylog.apk?v=3">APK をダウンロード</a>
-    <div class="ver">バージョン 1.02</div>
+    <a class="dl" href="honeylog.apk?v=4">APK をダウンロード</a>
+    <div class="ver">バージョン 1.10</div>
+
+    <div class="new">
+      <b>1.10 の変更</b><br>
+      <b>毎時 自動で集まるようになりました。</b>ボタンを押さなくても、時間になったら
+      画面を起こし、PINでロックを解除して、ハチミツ画面を開いて集めます。
+      終わったら元どおりロックに戻します。使用中は割り込まず次回に回します。
+    </div>
 
     <h2>入れたあとにやること</h2>
     <ol>
@@ -36,26 +46,37 @@
       <li>軸（ねこ / ぬこ / なこ）を入れる</li>
     </ol>
 
-    <h2>使い方</h2>
+    <h2>自動収集の設定</h2>
+    <ol>
+      <li><b>「毎時 自動で集める」を ON</b> にする</li>
+      <li><b>ハチミツ画面を開くURL</b> を入れる（これが無いと夜中にフィードが開いて空振りします）</li>
+      <li><b>画面ロックのPIN</b> を入れる（ロック中に解除するため。端末の中だけに保存します）</li>
+      <li><b>「他のアプリの上に表示」を許可</b> する（裏から画面を開くために必要）</li>
+    </ol>
+    <p>
+      設定が足りないときは画面の下に⚠で出ます。間隔は既定60分で、15分以上なら変えられます。
+    </p>
+
+    <h2>手で集めるとき</h2>
     <ol>
       <li>TikTok Lite で<b>ハチミツ争奪戦の画面</b>を開く</li>
       <li>このアプリに戻って「獲得履歴を集める」を押す</li>
-      <li>自動で TikTok Lite に戻り、下までスクロールしながら読み取る</li>
     </ol>
-    <p style="font-size:13px;margin-top:8px">
+    <p>
       「イベント詳細」のタブが開いていても、<b>自動で「獲得履歴」タブを押して</b>一覧まで辿り着きます。
-      「どこまで遡るか」に前回の集計日（例 20261005）を入れると、必要なぶんだけで止まるので速く終わります。
+      TikTok Lite を自分で開いてハチミツ画面にいるときも、ついでに集めます。
     </p>
 
     <h2>このアプリがすること・しないこと</h2>
     <ul>
-      <li>する: 画面を撮る／スクロールする／「獲得履歴」タブを押す</li>
-      <li>しない: 文字入力・他アプリの操作</li>
+      <li>する: 画面を撮る／スクロールする／「獲得履歴」タブを押す／ロックを解除する</li>
+      <li>しない: 文字入力・他アプリの操作・買い物や送金</li>
     </ul>
 
     <div class="note">
       autotap とは別のアプリです。autotap を更新してもこちらには影響しません。<br>
-      読み取った結果は autotap と同じ Firebase に入り、PC側でそのまま集計できます。
+      読み取った結果は autotap と同じ Firebase に入り、PC側でそのまま集計できます。<br>
+      読み取った文字そのものは集計に使いません（PC側で画像を見て集計します）。
     </div>
   </div>
 </body>
